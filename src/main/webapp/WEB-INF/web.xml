@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>registrationServlet</servlet-name>
+		<servlet-class>com.java.servlet.RegistrationServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.java.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>registrationServlet</servlet-name>
+		<url-pattern>/display-registration</url-pattern>
+		<url-pattern>/registration</url-pattern>
+		<url-pattern>/registration.do</url-pattern>
+		<url-pattern>/registration/*</url-pattern>
+		<url-pattern>/display/registration</url-pattern>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/display-login</url-pattern>
+	</servlet-mapping>
+</web-app>
